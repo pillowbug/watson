@@ -1,4 +1,6 @@
 <%= simple_form_for @show do |s| %>
     <%= s.input :title %>
+    <%= s.input :description %>
     <%= s.submit %>
 <% end %>
+<%= link_to "Go Home", shows_path %>

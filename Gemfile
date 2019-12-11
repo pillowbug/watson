@@ -7,7 +7,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '6.0.1'
 gem 'redis'
-
+gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'sassc-rails'

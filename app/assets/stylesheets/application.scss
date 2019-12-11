@@ -17,7 +17,7 @@
 
 body {
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #FFFFFF;
@@ -27,6 +27,12 @@ html {
   height: 100%;
   width: 100%;
 }
+
+// brand UI
+
+.shadows { box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); }
+.round { border-radius: 8px; }
+.button-blue { padding: 16px 24px; background-color: #2DE1FC; border-radius: 64px; margin: 16px 0; text-align: center; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); display: inline-block; text-decoration: none !important; color: white !important; width: 180px; }
 
 // text styles
 .text-left { text-align: left; }
@@ -55,7 +61,7 @@ html {
 // need to clear floats instead of contain them? use this below.
 .clear, .clear-both { clear: both; }
 
-// floats from our friends at T+T - makes sizing and  responsive design easy!
+// floats from our friends at T+T - makes sizing and responsive design easy!
 .float20 { float: left; width: 20%;}
 .float25 { float: left; width: 25%;}
 .float33 { float: left; width: 33.3333%;}

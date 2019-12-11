@@ -1,5 +1,9 @@
 <h1>Watson</h1>
 <h2>It's a pun on "What's On", get it?</h2>
 <p>Because this is where we'll keep track of what shows we're watching</p>
-<h6>Christ I am so lonely</h6>
+
+<% @shows.each do |show| %>
+  <p><%= link_to show.title, show_path(show) %></p>
+<% end %>
+
 <%= link_to "Add a show", new_show_path %>

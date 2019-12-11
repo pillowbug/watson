@@ -1,0 +1,19 @@
+nav {
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0px 32px;
+  background-color: #06D6A0;
+  h3, li {
+    margin-bottom: 0;
+    color: white;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}

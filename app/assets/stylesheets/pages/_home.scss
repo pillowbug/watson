@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+.hero {
+  width: 100%;
+  text-align: center;
+  h1 {
+    font-size: 256px;
+    margin-bottom: 0;
+  }
+  h2 {
+    color: #cdcdcd;
+  }
+}
+
+.shows {
+  margin: 0 auto;
+}

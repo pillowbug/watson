@@ -1,9 +1,20 @@
-<h1>Watson</h1>
-<h2>It's a pun on "What's On", get it?</h2>
-<p>Because this is where we'll keep track of what shows we're watching</p>
-
-<% @shows.each do |show| %>
-  <p><%= link_to show.title, show_path(show) %></p>
-<% end %>
-
-<%= link_to "Add a show", new_show_path %>
+<div class="hero">
+    <h1 class="text-center">Watson</h1>
+    <h2>It's a pun of "What's On", get it?</h2>
+    <p>Because this is where you keep track of what shows you're watching</p>
+</div>
+<div class="inner">
+  <div class="d-flex justify-content-between align-items-center">
+    <h2>Popular Picks</h2>
+    <%= link_to "Add a show +", new_show_path, class: "button-blue" %>
+  </div>
+  <div class="shows d-flex flex-wrap"><% @shows.each do |show| %>
+      <div class="show-card round shadows">
+        <div class="show-image"></div>
+        <div class="show-info d-flex align-items-center">
+          <p><%= link_to show.title, show_path(show) %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

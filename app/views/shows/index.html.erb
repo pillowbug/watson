@@ -1,9 +1,11 @@
-<h1>Watson</h1>
-<h2>It's a pun on "What's On", get it?</h2>
-<p>Because this is where we'll keep track of what shows we're watching</p>
+<div class="inner">
+  <h1>Watson</h1>
+  <h2>It's a pun on "What's On", get it?</h2>
+  <p>Because this is where you keep track of what shows you're watching</p>
 
-<% @shows.each do |show| %>
-  <p><%= link_to show.title, show_path(show) %></p>
-<% end %>
+  <% @shows.each do |show| %>
+    <p><%= link_to show.title, show_path(show) %></p>
+  <% end %>
 
-<%= link_to "Add a show", new_show_path %>
+  <%= link_to "Add a show", new_show_path %>
+</div>

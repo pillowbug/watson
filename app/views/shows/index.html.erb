@@ -8,7 +8,7 @@
     <h2>Popular Picks</h2>
     <%= link_to "Add a show +", new_show_path, class: "button-blue" %>
   </div>
-  <div class="shows d-flex flex-wrap justify-content-center"><% @shows.each do |show| %>
+  <div class="shows d-flex flex-wrap"><% @shows.each do |show| %>
       <div class="show-card round shadows">
         <div class="show-image"></div>
         <div class="show-info d-flex align-items-center">
